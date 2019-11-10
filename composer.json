@@ -1,0 +1,32 @@
+{
+    "name": "reddireccion/laravel-models-scaffold",
+    "description": "Auto-generate your models (scaffold) based on your database definition",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oscar Mendoza",
+            "email": "osmarmon32@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+	
+	//To autoload provider in project
+    "extra": {
+        "laravel": {
+            "providers": [
+                "reddireccion\\modelsscaffold\\ModelsScaffoldServiceProvider"
+            ]
+        }
+        /*"aliases": {
+            "Debugbar": "Barryvdh\\Debugbar\\Facade"
+        }*/
+    },
+    "autoload": {
+        "psr-4": {
+            "Reddireccion\\ModelsScaffold\\": "src/"
+        }
+    }
+	
+}
